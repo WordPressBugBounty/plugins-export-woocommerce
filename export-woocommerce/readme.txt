@@ -1,9 +1,10 @@
 === Export Products, Orders & Customers for WooCommerce ===
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, kousikmukherjeeli
 Tags: woocommerce, export
-Requires at least: 4.4
-Tested up to: 6.9
-Stable tag: 2.3.3
+Requires at least: 5.5
+Tested up to: 7.1
+Requires PHP: 7.4
+Stable tag: 2.4.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,8 +38,10 @@ With this plugin, you can do the following:
 * User capability.
 * Secondary separators.
 
-= Do More with Premium Version =
-When exporting products and/or orders, you can add one additional product and/or order **meta field** to export. Our [Pro version](https://wpfactory.com/item/export-woocommerce/) allows adding unlimited number of additional meta fields.
+= Feedback =
+* We are open to your suggestions and feedback.
+* Visit the [Export WooCommerce plugin page](https://wpfactory.com/item/export-woocommerce/).
+* Thank you for using or trying out one of our plugins!
 
 == Screenshots ==
 
@@ -47,11 +50,6 @@ When exporting products and/or orders, you can add one additional product and/or
 3. Dashboard Page
 4. Product Report Results Page
 
-= Feedback =
-* We are open to your suggestions and feedback.
-* Visit the [Export WooCommerce plugin page](https://wpfactory.com/item/export-woocommerce/).
-* Thank you for using or trying out one of our plugins!
-
 == Installation ==
 
 1. Upload the entire plugin folder to the `/wp-content/plugins/` directory.
@@ -59,6 +57,35 @@ When exporting products and/or orders, you can add one additional product and/or
 3. Start by visiting plugin settings at "WPFactory > Export".
 
 == Changelog ==
+
+= 2.4.2 - 23/10/2026 =
+* Dev - AJAX temporary export file paths validation implemented.
+
+= 2.4.1 - 21/10/2026 =
+* Dev - AJAX temporary export files cleanup implemented.
+* Dev - The free plugin version can now handle an unlimited number of additional export meta fields; all user roles; all (extra) export fields.
+
+= 2.4.0 - 15/10/2026 =
+* Fix - AJAX Download - Progress overlay fixed.
+* Dev - Input sanitized.
+* Dev - Output escaped.
+* Dev - Class and function prefixes fixed.
+* Dev - Mismatched text domain fixed.
+* Dev - All CSS and JavaScript moved to external files.
+* Dev - Settings styling improved.
+* Dev - Code refactoring.
+* Dev - Coding standards improved.
+* Dev - WPFactory Admin Menu - Library updated (to v1.1.4).
+* Dev - WPFactory Cross-Selling - Library updated (to v1.1.7).
+* Dev - WPFactory Key Manager - Library updated (to v1.1.1).
+* WC tested up to: 11.2.
+* Tested up to: 7.1.
+* Requires at least: 5.5.
+* Requires PHP: 7.4.
+
+= 2.3.4 - 23/05/2026 =
+* WC tested up to: 10.7.
+* Tested up to: 7.0.
 
 = 2.3.3 - 12/03/2026 =
 * Fix - Fixed "High-Performance Order Storage (HPOS)" compatibility warning.
@@ -331,7 +358,7 @@ When exporting products and/or orders, you can add one additional product and/or
 = 1.1.0 - 28/07/2017 =
 * Dev - WooCommerce 3.x.x compatibility - Orders - Using methods instead of accessing order properties directly.
 * Dev - WooCommerce 3.x.x compatibility - Orders - `get_order_currency()` replaced with `get_currency()`.
-* Dev - WooCommerce 3.x.x compatibility - Orders - `alg_get_order_item_meta_info()` - `has_meta()` replaced with `get_meta_data()`.
+* Dev - WooCommerce 3.x.x compatibility - Orders - `alg_wc_export_get_order_item_meta_info()` - `has_meta()` replaced with `get_meta_data()`.
 * Dev - WooCommerce 3.x.x compatibility - Export Customers from Orders - Using methods instead of accessing order properties directly (fixes "Order properties should not be accessed directly" notice).
 * Dev - WooCommerce 3.x.x compatibility - Products - `get_categories()` and `get_tags()` replaced with `wc_get_product_category_list()` and `wc_get_product_tag_list()`.
 * Dev - WooCommerce 3.x.x compatibility - Products - `get_dimensions()` replaced with `wc_format_dimensions( get_dimensions( false ) )`.
